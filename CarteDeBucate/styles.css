@@ -1,0 +1,96 @@
+/* Fundal pentru pagina index.html */
+body {
+    background-color: #f0f0f0; /* Fundal simplu și neutru pentru index */
+    font-family: Arial, Helvetica, sans-serif; /* Folosim fonturi comune pentru lizibilitate */
+    font-size: larger; /* Mărime font ușor mărită pentru o vizibilitate mai bună */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Line-height mărit pentru spațiere mai bună între rânduri */
+}
+
+/* Fundal pentru pagina de deserturi */
+body.deserturi {
+    background-image: url('fundal-deserturi.jpg'); /* Fundal imagine pentru pagina de deserturi */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    background-size: cover; /* Face imaginea de fundal să acopere complet zona de vizualizare */
+    background-position: center; /* Centrează imaginea de fundal */
+    background-attachment: fixed; /* Fixează imaginea când se face scroll */
+}
+
+/* Stilizarea meniului de navigare (nav) */
+nav ul {
+    background-color: #b19898; /* Fundal pentru meniu */
+    list-style-type: none; /* Elimină punctele de la lista neordonată */
+    padding: 10px;
+    text-align: center; /* Elemente centrate în meniu */
+    margin: 0; /* Elimină marginile implicite */
+}
+
+nav ul li {
+    display: inline; /* Afișare pe orizontală a elementelor meniului */
+    margin-right: 20px; /* Spațiu între elementele de meniu */
+}
+
+nav ul li a {
+    color: white; /* Text alb pentru linkurile din meniu */
+    text-decoration: none; /* Elimină sublinierea implicită a linkurilor */
+    padding: 10px; /* Adaugă padding pentru spațiere */
+}
+
+nav ul li a:hover {
+    background-color: #d1a1a1; /* Schimbă culoarea fundalului la hover pentru linkuri */
+    border-radius: 5px; /* Colțuri rotunjite la hover */
+    transition: background-color 0.3s ease; /* Tranziție lină pentru efectul hover */
+}
+
+/* Stilizarea unei linii de delimitare îngroșate și colorate */
+hr {
+    border: 2px solid black; /* Linie de delimitare neagră */
+    margin: 20px 0; /* Spațiu sus și jos de 20px */
+}
+
+/* Stilizarea tabelelor */
+table {
+    width: 100%; /* Lățimea tabelului acoperă întreaga pagină */
+    border-collapse: collapse; /* Înlătură spațiul dintre celule */
+    background-color: #f9f9f9; /* Fundal gri deschis pentru celulele tabelului */
+}
+
+table, th, td {
+    border: 1px solid black; /* Chenar negru pentru tabel, header și celule */
+}
+
+th, td {
+    padding: 10px; /* Spațiu intern în celule pentru lizibilitate */
+    text-align: left; /* Alinierea textului la stânga */
+}
+
+/* Stilizarea imaginii cu efect hover */
+img:hover {
+    transform: scale(1.1); /* Mărește imaginea la hover */
+    transition: transform 0.3s ease; /* Tranziție lină pentru efectul hover */
+}
+
+/* Stil pentru alte pagini cu fundal de imagine */
+body.fundal-imagine {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Stilizarea butoanelor */
+input[type="submit"], input[type="reset"] {
+    background-color: #4CAF50; /* Culoare verde pentru buton */
+    color: white; /* Text alb pe buton */
+    padding: 10px 20px; /* Spațiere internă în buton */
+    border: none; /* Elimină chenarul implicit */
+    border-radius: 4px; /* Colțuri rotunjite */
+    cursor: pointer; /* Schimbă cursorul în pointer la hover */
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049; /* Schimbă fundalul la hover pentru buton */
+    transition: background-color 0.3s ease; /* Tranziție lină pentru hover */
+}
